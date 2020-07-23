@@ -1,0 +1,72 @@
+# action.yml
+name: "AWS codedeploy"
+description: "Deploy with AWS CodedeDloy"
+inputs:
+  AWS_ACCESS_KEY_ID:
+    description: "AWS_ACCESS_KEY_ID"
+    required: true
+    default: ""
+  AWS_SECRET_ACCESS_KEY:
+    description: "AWS_SECRET_ACCESS_KEY"
+    required: true
+    default: ""
+  AWS_DEFAULT_REGION:
+    description: "AWS_DEFAULT_REGION"
+    required: true
+    default: ""
+  APPLICATION_NAME:
+    description: "APPLICATION_NAME"
+    required: true
+    default: ""
+  COMMAND:
+    description: "COMMAND"
+    required: true
+    default: ""
+  S3_BUCKET:
+    description: "S3_BUCKET"
+    required: false
+    default: ""
+  VERSION_LABEL:
+    description: "VERSION_LABEL"
+    required: false
+    default: ""
+  BUNDLE_TYPE:
+    description: "BUNDLE_TYPE"
+    required: false
+    default: ""
+  DEBUG:
+    description: "DEBUG"
+    required: false
+    default: ""
+  FOLDER:
+    description: "FOLDER"
+    required: false
+    default: ""
+  ZIP_FILE:
+    description: "ZIP_FILE"
+    required: false
+    default: ""
+  DEPLOYMENT_GROUP:
+    description: "DEPLOYMENT_GROUP"
+    required: true
+    default: ""
+  FILE_EXISTS_BEHAVIOR:
+    description: "FILE_EXISTS_BEHAVIOR"
+    required: false
+    default: ""
+  IGNORE_APPLICATION_STOP_FAILURES:
+    description: "IGNORE_APPLICATION_STOP_FAILURES"
+    required: false
+    default: ""
+  WAIT:
+    description: "WAIT"
+    required: false
+    default: ""
+  EXTRA_ARGS:
+    description: "EXTRA_ARGS"
+    required: false
+    default: ""
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
