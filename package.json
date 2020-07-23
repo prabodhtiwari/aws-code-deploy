@@ -1,0 +1,40 @@
+{
+  "name": "aws-code-deploy",
+  "version": "1.0.0",
+  "description": "Perform EC2 deployments from Github using AWS CodeDeploy.",
+  "main": "entrypoint.sh",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "commit":"git cz"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gamezop/aws-code-deploy.git"
+  },
+  "keywords": [
+    "aws-codedeploy",
+    "workflow"
+  ],
+  "author": "Prabodh Tiwari",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gamezop/aws-code-deploy/issues"
+  },
+  "homepage": "https://github.com/Gamezop/aws-code-deploy#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^9.1.1",
+    "@commitlint/config-conventional": "^9.1.1",
+    "cz-conventional-changelog": "^3.2.0",
+    "husky": "^4.2.5"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  }
+}
