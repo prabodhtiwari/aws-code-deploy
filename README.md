@@ -8,7 +8,7 @@ Perform EC2 deployments from Github using AWS CodeDeploy.
 Add the following script section of your workflow file:    
 
 ```yaml
-  uses: gamezop/aws-code-deploy@v1
+  uses: prabodhtiwari/aws-code-deploy@v1
   with:
     AWS_ACCESS_KEY_ID: '<string>' # Optional if already defined in the context.
     AWS_SECRET_ACCESS_KEY: '<string>' # Optional if already defined in the context.
@@ -131,7 +131,7 @@ jobs:
     steps:
       - name: use upload command
         id: upload
-        uses: gamezop/aws-code-deploy@v1
+        uses: prabodhtiwari/aws-code-deploy@v1
         with:
           AWS_DEFAULT_REGION: '$AWS_DEFAULT_REGION'
           AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
@@ -154,7 +154,7 @@ jobs:
     steps:
       - name: use deploy command
         id: deploy
-        uses: gamezop/aws-code-deploy@v1
+        uses: prabodhtiwari/aws-code-deploy@v1
         with:
           AWS_DEFAULT_REGION: '$AWS_DEFAULT_REGION'
           AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID

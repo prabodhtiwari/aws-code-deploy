@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Gamezop/aws-code-deploy.git"
+    "url": "git+https://github.com/prabodhtiwari/aws-code-deploy.git"
   },
   "keywords": [
     "aws-codedeploy",
@@ -18,9 +18,9 @@
   "author": "Prabodh Tiwari",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Gamezop/aws-code-deploy/issues"
+    "url": "https://github.com/prabodhtiwari/aws-code-deploy/issues"
   },
-  "homepage": "https://github.com/Gamezop/aws-code-deploy#readme",
+  "homepage": "https://github.com/prabodhtiwari/aws-code-deploy#readme",
   "devDependencies": {
     "@commitlint/cli": "^9.1.1",
     "@commitlint/config-conventional": "^9.1.1",
